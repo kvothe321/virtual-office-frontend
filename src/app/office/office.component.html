@@ -1,0 +1,6 @@
+<div class="office-container">
+  <div *ngFor="let desk of desks; let i = index" class="desk">
+    <div *ngIf="i === 0" class="person" cdkDrag cdkDragHandle></div>
+  </div>
+</div>
+

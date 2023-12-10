@@ -1,0 +1,45 @@
+/* office.component.css */
+
+.office-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* Set the container to take full viewport height */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: -60px;
+}
+
+.desk {
+  flex: 0 0 25%; /* Each desk takes 25% of the container width */
+  height: 120px; /* Set a fixed height for the desks */
+  margin: 10px; /* Add margin around desks for spacing */
+  background-color: #8b4513; /* Set a brown color for the desk */
+  border: 2px solid #654321; /* Set a darker brown color for the desk border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 120px; /* Center content vertically */
+  color: #fff; /* Set the text color to white */
+  font-size: 0; /* Set font size */
+  position: relative; /* Position relative for absolute positioning of the person square */
+  border-radius: 10px;
+  background-image: url('/assets/images/desk.jpg'); /* Adjust the image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.person {
+  width: 90px; /* Set the width of the person square */
+  height: 90px; /* Set the height of the person square */
+  background-color: #ff0008; /* Set the background color of the person square */
+  position: absolute; /* Position absolute for precise positioning */
+  top: 100%; /* Position at the bottom of the desk */
+  left: 50%; /* Position at the center horizontally */
+  transform: translateX(-50%); /* Center the square horizontally */
+  margin-top: 5px;
+  border-radius: 50%;
+  background-image: url('/assets/images/cat.jpg'); /* Add the path to your image */
+  background-size: cover;
+  background-position: center;
+}
