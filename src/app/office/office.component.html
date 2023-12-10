@@ -1,6 +1,24 @@
 <div class="office-container">
   <div *ngFor="let desk of desks; let i = index" class="desk">
-    <div *ngIf="i === 0" class="person" cdkDrag cdkDragHandle></div>
+    <div *ngIf="i === 0" class="person"
+         cdkDrag cdkDragHandle
+         (cdkDragStarted)="onDragStart($event)"
+         (cdkDragEnded)="onDragEnd($event)"></div>
+
+    <div *ngIf="i === 0" class="person"
+         cdkDrag cdkDragHandle
+         (cdkDragStarted)="onDragStart($event)"
+         (cdkDragEnded)="onDragEnd($event)"></div>
+
+    <div *ngIf="i === 0" class="person"
+         cdkDrag cdkDragHandle
+         (cdkDragStarted)="onDragStart($event)"
+         (cdkDragEnded)="onDragEnd($event)"></div>
+
   </div>
+  <!--<div>
+    <button (click)="sendMessage()">Send Message</button>
+  </div>-->
+
 </div>
 
