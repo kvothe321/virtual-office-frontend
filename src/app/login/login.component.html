@@ -1,0 +1,14 @@
+<div class="container">
+  <form (ngSubmit)="login()">
+    <h1> Welcome to Virtual Office!</h1>
+    <h1>Please log-in:</h1>
+    <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="username" required>
+
+    <input type="password" id="password" name="password" placeholder = "Password" [(ngModel)]="password" required>
+
+    <button type="submit">Login</button>
+    <p class = "create-account-text">Or create a new account here:</p>
+    <button (click)="goToSignup()">Sign up</button>
+  </form>
+</div>
+

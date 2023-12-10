@@ -1,0 +1,59 @@
+.container {
+  background: linear-gradient(to bottom, #1c382c, #13572d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  min-height: 100vh; /* Adjust as needed */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 350px;
+  background: linear-gradient(to bottom, #494949, #8c8989);
+  align-items: center;
+  font-family: 'Helvetica', monospace;
+  font-size: 12px;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-color: white;
+  width:200px;
+  border: 2px solid #000000;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #2738a1, #182260);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width:150px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: linear-gradient(to left, #2738a1, #182260);
+}
+
+.create-account-text {
+  font-size: 18px; /* Set your desired font size */
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
