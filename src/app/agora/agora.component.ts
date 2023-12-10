@@ -10,19 +10,37 @@ import AgoraRTC, {
 @Component({
   selector: 'app-agora-component',
   template: `
-      <div>
+      <div class="container">
           <div id="local-stream" #localStream></div>
           <div id="remote-streams" #remoteStreams></div>
-          <button (click)="join()">Join Call</button>
-          <button (click)="leave()">Leave Call</button>
       </div>
+
+      <button (click)="join()">Join Call</button>
+      <button (click)="leave()">Leave Call</button>
   `,
   styles: [
     `
-      #local-stream, #remote-streams {
-        width: 100%;
+      #local-stream {
+        box-sizing: border-box;
+        width: 500px;
         height: 300px;
         background-color: black;
+        border-radius: 8px;
+        border: 4px green solid
+      }
+
+      .container {
+        display: flex;
+        width: 100vw;
+      }
+
+      #remote-streams {
+        width: 500px;
+        max-height: 1000px;
+        height: 300px;
+        background-color: black;
+        border-radius: 8px;
+        display: flex;
       }
     `
   ],

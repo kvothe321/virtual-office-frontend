@@ -27,6 +27,7 @@
   background-image: url('/assets/images/desk.jpg'); /* Adjust the image path */
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .person {
@@ -42,4 +43,11 @@
   background-image: url('/assets/images/cat.jpg'); /* Add the path to your image */
   background-size: cover;
   background-position: center;
+  z-index: 100;
+}
+
+.person:hover {
+  transform: translateX(-50%) scale(1.1); /* Scale the person on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+  z-index: 1001; /* Increase the z-index further on hover to ensure it's above everything */
 }
